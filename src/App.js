@@ -1,5 +1,27 @@
-export default function Square() {
-  return <button className="square">X</button>;
+export default function board() {
+  return (
+  <> 
+    <div className="board-row"> 
+    <button className="square">1</button>
+    <button className="square">2</button>
+    <button className="square">3</button>
+    </div>
+
+    <div className="board-row">
+    <button className="square">4</button>
+    <button className="square">5</button>
+    <button className="square">6</button>
+    </div>
+
+    <div className="board-row">
+    <button className="square">7</button>
+    <button className="square">8</button>
+    <button className="square">9</button>
+    </div>
+
+    
+  </>
+  ); //Os componentes react só podem retornar 1 elemento JSX, ou seja, não podem ser vários buttons. Por isso, usamos "<>" e "</>", para agrupar vários elementos e para que considere como apenas 1. 
 } 
 
 /*
