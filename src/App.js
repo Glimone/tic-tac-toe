@@ -1,28 +1,36 @@
-export default function board() {
+
+//Criamos uma função chamada "Square", aplicamos o retorno o button. Chamamos a função dentro da function Board. Com isso, é possível realizarmos a alteração de 1 único valor, assim alterando todos.
+function Square() {
+
+  return <button className="square">X</button>;
+}
+
+export default function Board() {
   return (
-  <> 
-    <div className="board-row"> 
-    <button className="square">1</button>
-    <button className="square">2</button>
-    <button className="square">3</button>
-    </div>
+    <> 
+      <div className="board-row"> 
+        <Square /> 
+        <Square />
+        <Square />
+      </div>
+ 
+      <div className="board-row"> 
+        <Square />
+        <Square />
+        <Square />
+      </div>
 
-    <div className="board-row">
-    <button className="square">4</button>
-    <button className="square">5</button>
-    <button className="square">6</button>
-    </div>
-
-    <div className="board-row">
-    <button className="square">7</button>
-    <button className="square">8</button>
-    <button className="square">9</button>
-    </div>
-
-    
-  </>
-  ); //Os componentes react só podem retornar 1 elemento JSX, ou seja, não podem ser vários buttons. Por isso, usamos "<>" e "</>", para agrupar vários elementos e para que considere como apenas 1. 
+      <div className="board-row"> 
+        <Square />
+        <Square />
+        <Square />
+      </div>
+      
+    </>
+  );
 } 
+
+ //Os componentes react só podem retornar 1 elemento JSX, ou seja, não podem ser vários buttons. Por isso, usamos "<>" e "</>", para agrupar vários elementos e para que considere como apenas 1. 
 
 /*
 LINHA 1
