@@ -15,7 +15,7 @@ function Square( { value } ) {
 //return - Retornaa os botões 
 export default function Board() {
   return (
-    <> {/*Os componentes react só podem retornar  elemento JSX, ou seja, não podem ser vários buttons. Por isso, usamos "<>" e "</>", para agrupar vários elementos e para que considere como apenas um.  */}
+    <> {/*Os componentes react só podem retornar  elemento JSX, ou seja, não podem ser vários buttons. Por isso, usamos "<>" e "</>", para agrupar vários elementos e para que considere como apenas um. */}
       <div className="board-row"> 
         <Square value="1" /> {/*value aqui, é a props retornada. */}
         <Square value="2" /> 
