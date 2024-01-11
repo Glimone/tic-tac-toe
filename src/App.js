@@ -1,6 +1,6 @@
 
 //Criamos uma função chamada "Square", aplicamos o retorno o button. Chamamos a função dentro da function Board usando JSX ( <Square /> ). Com isso, é possível realizarmos a alteração de  único valor, assim alterando todos os squares.
-function Square( { value } ) {
+function Square({ value }) {
                   //value nesse caso é um props, retornando a function pai, Board.
 
   function handleClick() { //Criação de função que informa o momento do click.
